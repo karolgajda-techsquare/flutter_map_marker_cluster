@@ -9,17 +9,22 @@ environment:
   sdk: ">=3.0.0 <4.0.0"
   flutter: ">=3.10.0"
 
+publish_to: 'none'
+
 dependencies:
   flutter:
     sdk: flutter
-  flutter_map: ^8.1.1
+  flutter_map:
+    git:
+      url: https://github.com/fleaflet/flutter_map.git
+      ref: master
   flutter_map_marker_popup:
     git:
-      url: https://github.com/enricostrijks/flutter_map_marker_popup.git
+      url: https://github.com/karolgajda-techsquare/flutter_map_marker_popup
       ref: master
-  latlong2: ^0.9.0
+  latlong2: ^0.9.1
 
 dev_dependencies:
-  flutter_lints: ^4.0.0
+  flutter_lints: ^6.0.0
   flutter_test:
     sdk: flutter
